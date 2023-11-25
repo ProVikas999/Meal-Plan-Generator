@@ -1,0 +1,74 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+background-color: #777;
+    color: #fff; /* Text color */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #363636; /* Form background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="number"],
+  select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #777; /* Input border color */
+    border-radius: 5px;
+    background-color: #2b2b2b; /* Input background color */
+    color: #fff; /* Input text color */
+  }
+  
+  select:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #fff; /* Input border color on focus */
+  }
+  
+  button {
+    padding: 10px;
+    width: 100%;
+    background-color: #FFD700; /* Button background color */
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  button:hover {
+    background-color: #F4D03F; /* Button background color on hover */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
